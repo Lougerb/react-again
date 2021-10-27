@@ -1,0 +1,59 @@
+.p-expense {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  padding: 1.5rem 1rem;
+  border-radius: 12px;
+  background-color: #4b4b4b;
+  font-family: Arial, Helvetica, sans-serif;
+
+  &:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+
+  &__date {
+    font-size: 16px;
+    width: 150px;
+    color: #fff;
+    @include mq {
+      font-size: 1.6rem;
+      width: 15rem;
+    }
+  }
+
+  &__description {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    @include mq {
+      justify-content: flex-start;
+    }
+  }
+
+  & h2 {
+    color: #3a3a3a;
+    font-size: 2.4rem;
+    flex: 1;
+    margin: 0 1rem;
+    color: white;
+    @include mq {
+      font-size: 1.25rem;
+    }
+  }
+
+  &__price {
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background-color: #40005d;
+    border: 1px solid white;
+    padding: 0.5rem;
+    border-radius: 12px;
+    @include mq {
+      font-size: 1.25rem;
+      padding: 0.5rem 1.5rem;
+    }
+  }
+}
